@@ -16,17 +16,17 @@ let prova = document.getElementById("prova")
 
 const team = [
     { memberName: "Wayne Barnett" , role: "Founder" , personalImage: "wayne-barnett-founder-ceo.jpg" },
-    { memberName: "Angela Caroll" , role: "Chief Editor" , personalImage: "wayne-barnett-founder-ceo.jpg" },
-    { memberName: "Walter Gordon" , role: "Office Manager" , personalImage: "wayne-barnett-founder-ceo.jpg" },
-    { memberName: "Angela Lopez" , role: "Social Media Manager" , personalImage: "wayne-barnett-founder-ceo.jpg" },
-    { memberName: "Scott Estrada" , role: "Developer" , personalImage: "wayne-barnett-founder-ceo.jpg" },
-    { memberName: "Barbara Ramos" , role: "Graphic Designer" , personalImage: "wayne-barnett-founder-ceo.jpg" },
+    { memberName: "Angela Caroll" , role: "Chief Editor" , personalImage: "angela-caroll-chief-editor.jpg" },
+    { memberName: "Walter Gordon" , role: "Office Manager" , personalImage: "walter-gordon-office-manager.jpg" },
+    { memberName: "Angela Lopez" , role: "Social Media Manager" , personalImage: "angela-lopez-social-media-manager.jpg" },
+    { memberName: "Scott Estrada" , role: "Developer" , personalImage: "scott-estrada-developer.jpg" },
+    { memberName: "Barbara Ramos" , role: "Graphic Designer" , personalImage: "barbara-ramos-graphic-designer.jpg" },
 ]
 
 
 for (i=0; i<team.length; i++) {
     const currentTeam = team[i]
     console.log( ` ${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} `  )
-    prova.innerHTML += ` <div>${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} </div> `
+    prova.innerHTML += ` <div><strong>NAME:</strong>${currentTeam.memberName} ; <strong>ROLE:</strong> ${currentTeam.role} ; <strong>PERSONAL-IMAGE:</strong> <img src="img/${currentTeam.personalImage}" alt="1" </div> `
 }
 
