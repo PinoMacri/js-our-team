@@ -10,14 +10,28 @@ Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
 Organizzare i singoli membri in card/schede e rendere la pagina gradevole (potete usare lo screen in allegato come spunto
 */
-const teamMember = [
-    {
-        Founder: ["Wayne Barnett", "wayne-barnett-founder-ceo.jpg"],
-        ChiefEditor: ["Angela Carrol", "angela-caroll-chief-editor.jpg"],
-        OfficeManager: ["Walter Gordon", "walter-gordon-office-manager.jpg"],
-        SocialMediaManager: ["Angela Lopez", "angela-lopez-social-media-manager.jpg"],
-        Developer: ["Scott Estrada", "scott-estrada-developer.jpg"],
-        GraphicDesigner: ["Barbara Ramos", "barbara-ramos-graphic-designer.jpg"],
-    
-    }
+let prova = document.getElementById("prova")
+
+//---------------------------------------------------------------------------------------------------
+
+const team = [
+    { memberName: "Wayne Barnett" , role: "Founder" , personalImage: "wayne-barnett-founder-ceo.jpg" },
+    { memberName: "Angela Caroll" , role: "Chief Editor" , personalImage: "wayne-barnett-founder-ceo.jpg" },
+    { memberName: "Walter Gordon" , role: "Office Manager" , personalImage: "wayne-barnett-founder-ceo.jpg" },
+    { memberName: "Angela Lopez" , role: "Social Media Manager" , personalImage: "wayne-barnett-founder-ceo.jpg" },
+    { memberName: "Scott Estrada" , role: "Developer" , personalImage: "wayne-barnett-founder-ceo.jpg" },
+    { memberName: "Barbara Ramos" , role: "Graphic Designer" , personalImage: "wayne-barnett-founder-ceo.jpg" },
 ]
+
+const role = (team[0]["role"]);
+const personalImage = (team[0]["personalImage"]);
+
+
+for (i=0; i<=team.length; i++) {
+    const currentTeam = team[i]
+     
+    console.log( ` ${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} `  )
+    prova.innerText = (` ${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} ` )
+   
+   
+}
