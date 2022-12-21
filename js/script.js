@@ -31,7 +31,7 @@ for (i=0; i<=team.length; i++) {
     const currentTeam = team[i]
      
     console.log( ` ${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} `  )
-    prova.innerText = (` ${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} ` )
+    prova.innerText = ` ${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} ` 
    
    
 }
