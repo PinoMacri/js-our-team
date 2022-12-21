@@ -23,15 +23,10 @@ const team = [
     { memberName: "Barbara Ramos" , role: "Graphic Designer" , personalImage: "wayne-barnett-founder-ceo.jpg" },
 ]
 
-const role = (team[0]["role"]);
-const personalImage = (team[0]["personalImage"]);
 
-
-for (i=0; i<=team.length; i++) {
+for (i=0; i<team.length; i++) {
     const currentTeam = team[i]
-     
     console.log( ` ${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} `  )
-    prova.innerText = ` ${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} ` 
-   
-   
+    prova.innerHTML += ` <div>${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} </div> `
 }
+
