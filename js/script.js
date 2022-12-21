@@ -10,10 +10,9 @@ Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
 Organizzare i singoli membri in card/schede e rendere la pagina gradevole (potete usare lo screen in allegato come spunto
 */
-let prova = document.getElementById("prova")
 
-//---------------------------------------------------------------------------------------------------
-
+let container = document.getElementById("container")
+container.innerHTML += `<div class="fullWidth padding textCenter"><strong>OUR TEAM</strong></div> <div class="textCenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in varius ante. Sed quis luctus eros. Phasellus rutrum laoreet leo in consequat.</div> `
 const team = [
     { memberName: "Wayne Barnett" , role: "Founder" , personalImage: "wayne-barnett-founder-ceo.jpg" },
     { memberName: "Angela Caroll" , role: "Chief Editor" , personalImage: "angela-caroll-chief-editor.jpg" },
@@ -22,11 +21,9 @@ const team = [
     { memberName: "Scott Estrada" , role: "Developer" , personalImage: "scott-estrada-developer.jpg" },
     { memberName: "Barbara Ramos" , role: "Graphic Designer" , personalImage: "barbara-ramos-graphic-designer.jpg" },
 ]
-
-
 for (i=0; i<team.length; i++) {
     const currentTeam = team[i]
     console.log( ` ${currentTeam.memberName} ${currentTeam.role} ${currentTeam.personalImage} `  )
-    prova.innerHTML += ` <div><strong>NAME:</strong>${currentTeam.memberName} ; <strong>ROLE:</strong> ${currentTeam.role} ; <strong>PERSONAL-IMAGE:</strong> <img src="img/${currentTeam.personalImage}" alt="1" </div> `
+    container.innerHTML += ` <div class="radius card white"><div class="padding"> </div>${currentTeam.role}<div class="padding"><strong>${currentTeam.memberName}</strong></div> <div><img src="img/${currentTeam.personalImage}"alt="1" <div> </div> `
 }
 

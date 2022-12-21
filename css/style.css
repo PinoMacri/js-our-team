@@ -1,0 +1,42 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: lightgray;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.card{
+    display: flex ;
+    flex-direction: column-reverse;
+    width: calc(100% / 3 - 30px);
+    
+    text-align: center;
+}
+img {
+    width: 100%
+}
+.white {
+    background-color: white;
+}
+.padding {
+    padding: 10px;
+}
+.radius {
+    border-radius: 30px;
+}
+.fullWidth {
+    width: 1200px;
+}
+.textCenter {
+    text-align: center;
+}
